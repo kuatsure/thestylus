@@ -339,7 +339,6 @@ module.exports = (grunt) ->
   ]
 
   grunt.registerTask 'check', [
-    'jekyll:check'
     'coffeelint:check'
   ]
 
