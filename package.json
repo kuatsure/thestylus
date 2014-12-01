@@ -20,6 +20,9 @@
   "bugs": {
     "url": "http://github.com/kuatsure/thestylus/issues"
   },
+  "scripts": {
+    "test": "grunt check"
+  },
   "dependencies": {},
   "devDependencies": {
     "grunt": "~0.4.1",

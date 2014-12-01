@@ -1,3 +1,15 @@
-language: node_js
-node_js:
-- '0.10'
+language: ruby
+rvm:
+- 2.0.0
+before_script:
+- npm install grunt-cli
+- gem install jekyll
+deploy:
+  provider: divshot
+  environment:
+    master: production
+    staging: staging
+    development: development
+  skip_cleanup: true
+  api_key:
+    secure: 0ll0oN31uESzANxRFh0PIV6exxLUCB0SqywcMsy58pvK/eapRVwXwyyKUFuQyLvArZmzeU7Nku6J+QYKqIdGSqWkCTprlhdXLN8yt4C2Lsv2yMhq+7d4qP43mppnTjrjVYN59I6mwkDfIVDVxsswqGui/fbpTsmymtfbl2peA6E=
