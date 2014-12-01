@@ -1,0 +1,23 @@
+.hero {
+  position: relative;
+  height: 16em;
+  background: transparent url( '../images/background-equipment.png' ) center 35% no-repeat;
+  background-size: cover;
+  transition: height .15s ease-in;
+
+  @include media-query( lap-and-up ) {
+    height: 30em;
+  }
+
+  @include media-query( desk ) {
+    height: 39em;
+  }
+
+  &.minify {
+    height: 12em;
+
+    @include media-query( desk ) {
+      height: 13em;
+    }
+  }
+}

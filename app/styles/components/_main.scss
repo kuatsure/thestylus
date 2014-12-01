@@ -1,0 +1,30 @@
+.main {
+  &.in,
+  &.collapsing {
+    padding: $inuit-base-spacing-unit;
+
+    @include media-query( lap-and-up ) {
+      padding-left: 15%;
+      padding-right: 15%;
+    }
+  }
+
+  &:nth-child(odd) {
+    @include content-anchor( $brand-color--light, darken( $brand-color--light, 20% ) );
+    background-color: $brand-color--dark;
+    color: $brand-color--light;
+  }
+
+  &:nth-child(even) {
+    @include content-anchor( $brand-color--dark, darken( $brand-color, 20% ) );
+    background-color: $brand-color--light;
+    color: $brand-color--dark;
+  }
+
+  &:nth-child(n) {
+    a:link.btn {
+      border-style: solid;
+      color: #fff;
+    }
+  }
+}

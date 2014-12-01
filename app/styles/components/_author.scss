@@ -1,0 +1,14 @@
+.author {
+  @include inuit-font-size( 24px );
+  margin-top: 0;
+  padding: $inuit-base-spacing-unit;
+  background-color: rgba( lighten( $brand-color, 40% ), .80 );
+  color: $brand-color--dark;
+  text-align: center;
+  font-weight: normal;
+  letter-spacing: .2em;
+
+  @include media-query( lap-and-up ) {
+    @include inuit-font-size( 30px );
+  }
+}

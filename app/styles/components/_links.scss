@@ -1,0 +1,33 @@
+.links {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 0;
+  font-weight: normal;
+  background-color: rgba( lighten( $brand-color, 40% ), .80 );
+  text-align: center;
+
+  @include media-query( lap-and-up ) {
+    @include inuit-font-size( 24px );
+  }
+
+  a,
+  :link,
+  :visited {
+    color: $brand-color--dark;
+  }
+
+  :active,
+  :focus,
+  :hover {
+    color: $brand-color;
+  }
+
+  .btn--positive {
+    cursor: default;
+
+    &:hover {
+      color: $brand-color--dark;
+    }
+  }
+}

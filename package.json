@@ -1,0 +1,52 @@
+{
+  "name": "thestylus",
+  "private": true,
+  "description": "Personal Site of Jarrett Drouillard",
+  "author": "Jarrett Drouillard <jarrett@thestyl.us>",
+  "version": "0.0.0",
+  "keywords": [
+    "Jarrett",
+    "Drouillard",
+    "kuatsure",
+    "southwest ohio",
+    "cincinnati",
+    "dayton",
+    "developer"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/kuatsure/thestylus"
+  },
+  "bugs": {
+    "url": "http://github.com/kuatsure/thestylus/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-autoprefixer": "^2.0.0",
+    "grunt-build-control": "~0.1.2",
+    "grunt-coffeelint": "~0.0.8",
+    "grunt-concurrent": "^1.0.0",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-coffee": "^0.12.0",
+    "grunt-contrib-concat": "^0.5.0",
+    "grunt-contrib-connect": "^0.9.0",
+    "grunt-contrib-copy": "^0.7.0",
+    "grunt-contrib-cssmin": "^0.10.0",
+    "grunt-contrib-htmlmin": "^0.3.0",
+    "grunt-contrib-imagemin": "^0.9.2",
+    "grunt-contrib-sass": "^0.8.1",
+    "grunt-contrib-uglify": "^0.6.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-filerev": "^2.1.2",
+    "grunt-jekyll": "~0.4.1",
+    "grunt-replace": "^0.8.0",
+    "grunt-svgmin": "^2.0.0",
+    "grunt-usemin": "^2.1.0",
+    "load-grunt-tasks": "^1.0.0",
+    "time-grunt": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  }
+}
