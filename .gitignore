@@ -1,6 +1,4 @@
 node_modules
-dist
 .*/
 _bower_components
-fonts
-divshot.json
+app/fonts
