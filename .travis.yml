@@ -6,6 +6,8 @@ before_script:
 - bundle install
 - npm install grunt-cli bower
 - bower install
+after_success:
+- grunt
 deploy:
   provider: divshot
   environment:
