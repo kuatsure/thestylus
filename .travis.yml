@@ -3,9 +3,9 @@ node_js:
 - '0.10'
 before_script:
 - gem update --system
-- gem install bundler
-- bundle -v
-- npm install grunt-cli
+- bundle install
+- npm install grunt-cli bower
+- bower install
 deploy:
   provider: divshot
   environment:
