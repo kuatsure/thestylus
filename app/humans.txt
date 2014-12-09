@@ -1,0 +1,15 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Jarrett Drouillard -- Developer -- @kuatsure
+
+# THANKS
+
+    Matthew Hancock -- Photographer -- @drimo
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5
+    Divshot, jQuery, Bootstrap, inuit.css
