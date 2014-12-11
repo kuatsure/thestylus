@@ -9,13 +9,13 @@
     }
   }
 
-  &:nth-child(odd) {
+  &:nth-child(2n+1) {
     @include content-anchor( $brand-color--light, darken( $brand-color--light, 20% ) );
     background-color: $brand-color--dark;
     color: $brand-color--light;
   }
 
-  &:nth-child(even) {
+  &:nth-child(2n) {
     @include content-anchor( $brand-color--dark, darken( $brand-color, 20% ) );
     background-color: $brand-color--light;
     color: $brand-color--dark;
