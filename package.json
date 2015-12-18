@@ -28,6 +28,7 @@
     "grunt": "~0.4.1",
     "grunt-autoprefixer": "^2.0.0",
     "grunt-build-control": "~0.1.2",
+    "grunt-cli": "~0.1.13",
     "grunt-coffeelint": "~0.0.8",
     "grunt-concurrent": "^1.0.0",
     "grunt-contrib-clean": "^0.6.0",
