@@ -360,7 +360,7 @@ module.exports = (grunt) ->
     'autoprefixer:dist'
     'cssmin'
     'uglify'
-    'imagemin'
+    # 'imagemin'
     'svgmin'
     'filerev'
     'usemin'
