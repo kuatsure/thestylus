@@ -1,5 +1,5 @@
 source "http://rubygems.org"
 
-gem 'sass', '~>3.4.6'
-gem 'jekyll', '~>1.4.0'
+gem 'jekyll', '~> 2.3.0'
 gem 'redcarpet'
+gem 'sass', '~> 3.4.3'
