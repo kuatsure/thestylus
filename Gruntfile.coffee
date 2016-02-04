@@ -53,30 +53,45 @@ module.exports = (grunt) ->
           '<%= yeoman.app %>/images/**/*.{gif,jpg,jpeg,png,svg,webp}'
         ]
 
-    connect:
-      options:
-        port: 9000
-        livereload: 35729
-        hostname: 'localhost'
-      livereload:
-        options:
-          base: [
-            '.tmp'
-            '.jekyll'
-            '<%= yeoman.app %>'
+    browserSync:
+      server:
+        bsFiles:
+          src: [
+            '.jekyll/**/*.html'
+            '.tmp/css/**/*.css'
+            '{.tmp,<%= yeoman.app %>}/scripts/**/*.js'
+            '{<%= yeoman.app %>}/_bower_components/**/*.js'
+            '<%= yeoman.app %>/img/**/*.{gif,jpg,jpeg,png,svg,webp}'
           ]
+        options:
+          server:
+            baseDir: [
+              '.jekyll'
+              '.tmp'
+              '<%= yeoman.app %>'
+            ]
+          watchTask: true
       dist:
         options:
-          open: true
-          base: [ '<%= yeoman.dist %>' ]
+          server:
+            baseDir: '<%= yeoman.dist %>'
       test:
-        options:
-          base: [
-            '.tmp'
-            '.jekyll'
-            'test'
-            '<%= yeoman.app %>'
+        bsFiles:
+          src: [
+            '.jekyll/**/*.html'
+            '.tmp/css/**/*.css'
+            '{.tmp,<%= yeoman.app %>}/scripts/**/*.js'
+            '{<%= yeoman.app %>}/_bower_components/**/*.js'
+            '<%= yeoman.app %>/img/**/*.{gif,jpg,jpeg,png,svg,webp}'
           ]
+        options:
+          server:
+            baseDir: [
+              '.jekyll'
+              '.tmp'
+              '<%= yeoman.app %>'
+            ]
+          watchTask: true
 
     clean:
       dist:
@@ -314,23 +329,17 @@ module.exports = (grunt) ->
         'replace:dist'
       ]
 
-  grunt.registerTask 'serve', (target) ->
-    if target is 'dist'
-      return grunt.task.run [
-        'build'
-        'connect:dist:keepalive'
-      ]
+  grunt.registerTask 'serve', ( target ) ->
+    return grunt.task.run [ 'build', 'browserSync:dist' ] if target is 'dist'
 
     grunt.task.run [
       'clean:server'
       'concurrent:server'
       'replace:jekyll'
-      'autoprefixer:server'
-      'connect:livereload'
+      'autoprefixer:dist'
+      'browserSync:server'
       'watch'
     ]
-
-    return
 
   grunt.registerTask 'test', [
     # 'clean:server',
@@ -351,7 +360,7 @@ module.exports = (grunt) ->
     'autoprefixer:dist'
     'cssmin'
     'uglify'
-    'imagemin'
+    # 'imagemin'
     'svgmin'
     'filerev'
     'usemin'

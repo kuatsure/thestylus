@@ -3,3 +3,6 @@ $base-font-family: "Avenir Next", Avenir, Helvetica, Arial, sans-serif;
 $brand-color: #7f7f7f;
 $brand-color--light: lighten( $brand-color, 20% );
 $brand-color--dark: darken( $brand-color, 20% );
+
+$inuit-enable-flag--rev:     true;
+$inuit-enable-flag--top:     true;
