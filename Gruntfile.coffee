@@ -307,11 +307,7 @@ module.exports = (grunt) ->
         ]]
 
     coffeelint:
-      options:
-        'max_line_length':
-          'level': 'ignore'
-        'no_empty_param_list':
-          'level': 'error'
+      options: configFile: 'coffeelint.json'
       check: [ '<%= yeoman.app %>/scripts/**/*.coffee' ]
 
     concurrent:
