@@ -251,9 +251,8 @@ module.exports = (grunt) ->
     uglify: {}
 
     cssmin:
-      dist:
-        options:
-          check: 'gzip'
+      options:
+        check: 'gzip'
 
     imagemin:
       dist:
