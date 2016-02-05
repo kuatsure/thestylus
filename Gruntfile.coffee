@@ -310,6 +310,10 @@ module.exports = (grunt) ->
       options: configFile: 'coffeelint.json'
       check: [ '<%= yeoman.app %>/scripts/**/*.coffee' ]
 
+    scsslint:
+      options: config: '.scss-lint.yml'
+      check: [ '<%= yeoman.app %>/styles/**/*.scss' ]
+
     concurrent:
       server: [
         'sass:server'
@@ -344,6 +348,7 @@ module.exports = (grunt) ->
 
   grunt.registerTask 'check', [
     'coffeelint:check'
+    'scsslint:check'
   ]
 
   grunt.registerTask 'build', [
