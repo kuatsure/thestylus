@@ -46,7 +46,7 @@
     "grunt-contrib-watch": "~0.6.1",
     "grunt-filerev": "~2.1.2",
     "grunt-jekyll": "~0.4.1",
-    "grunt-replace": "~0.8.0",
+    "grunt-replace": "~1.0.1",
     "grunt-scss-lint": "~0.3.8",
     "grunt-svgmin": "~2.0.0",
     "grunt-usemin": "~2.4.0",
