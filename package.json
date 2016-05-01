@@ -50,7 +50,7 @@
     "grunt-scss-lint": "~0.3.8",
     "grunt-svgmin": "~2.0.0",
     "grunt-usemin": "~2.4.0",
-    "jshint-stylish": "~0.4.0",
+    "jshint-stylish": "~2.2.0",
     "load-grunt-tasks": "~1.0.0",
     "time-grunt": "~1.0.0"
   },
