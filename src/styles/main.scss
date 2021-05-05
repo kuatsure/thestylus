@@ -1,0 +1,39 @@
+// Screen Manifest
+
+@import 'settings.variables';
+
+@import '~helpful-helpers/all';
+
+@import '~symbolset-sass/ss-standard',
+        '~symbolset-sass/ss-social-regular';
+
+@import "~bootstrap/scss/bootstrap.scss";
+
+@import '~inuit-responsive-settings/settings.responsive',
+        '~inuit-defaults/settings.defaults';
+
+@import '~inuit-responsive-tools/tools.responsive',
+        '~inuit-functions/tools.functions',
+        '~inuit-mixins/tools.mixins';
+
+@import '~inuit-normalize/generic.normalize',
+        '~inuit-box-sizing/generic.box-sizing';
+
+@import '~inuit-page/base.page',
+        '~inuit-headings/base.headings',
+        '~inuit-images/base.images',
+        '~inuit-paragraphs/base.paragraphs',
+        '~inuit-lists/base.lists',
+        'base/page';
+
+@import '~inuit-list-block/objects.list-block',
+        '~inuit-list-inline/objects.list-inline',
+        '~inuit-flag/objects.flag',
+        '~inuit-buttons/objects.buttons',
+        'objects/flag',
+        'objects/buttons';
+
+@import 'components/hero',
+        'components/author',
+        'components/links',
+        'components/main';
